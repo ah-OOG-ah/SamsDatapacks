@@ -1,6 +1,7 @@
 {
     "values": [
-        "warder:load"
+        "warder:load",
+        "purgatory:load"
     ]
 }
   
