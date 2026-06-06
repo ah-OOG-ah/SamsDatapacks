@@ -8,6 +8,11 @@ execute \
   at @s \
   if score @s purgatory_deaths matches 1.. \
   run say No! Not Detroit! Anything but Detroit!
+execute \
+  as @a \
+  at @s \
+  if score @s purgatory_deaths matches 1..
+  run ban @s "Sent to Detroit."
 #execute \
 #  as @a \
 #  at @s \
