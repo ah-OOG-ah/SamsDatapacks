@@ -8,13 +8,14 @@ execute \
   at @s \
   if score @s purgatory_deaths matches 1.. \
   run say No! Not Detroit! Anything but Detroit!
+# Don't actually ban them
 execute \
   as @a \
   at @s \
-  if score @s purgatory_deaths matches 1..
-  run ban @s "Sent to Detroit."
+  if score @s purgatory_deaths matches 1.. \
+  run scoreboard players set @s purgatory_deaths 0
 #execute \
 #  as @a \
 #  at @s \
-#  if score @s purgatory_deaths matches 1..
+#  if score @s purgatory_deaths matches 1.. \
 #  run transfer detroit
